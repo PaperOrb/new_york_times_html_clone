@@ -54,7 +54,7 @@ header {
 
 .nyt-logo {
   height: 25px;
-  width: 100vw;
+  width: 25vw;
 }
 
 .filler {
@@ -65,7 +65,6 @@ header {
 
 main {
   border: solid 1px blue;
-  position: relative;
   display: flex;
   justify-content: center;
   top: 35px;
