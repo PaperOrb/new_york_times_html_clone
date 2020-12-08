@@ -99,21 +99,30 @@ main {
   justify-content: flex-start;
 }
 
+a.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  margin-right: 16px;
+  height: 27px;
+  width: 27px;
+  background: #eeeeee;
+  border: none;
+  border: 1px #eee solid;
+  border-radius: 50%;
+}
+
 img.svg {
   box-sizing: content-box;
   height: 15px;
   width: 15px;
   padding: 5px;
-  background: #eeeeee;
-  border: 1px #eee solid;
-  border-radius: 50%;
-} 
+  background: transparent;
+}
 
-.social a {
-  box-sizing: content-box;
-  margin-right: 16px;
-  height: 27px;
-  width: 18px;
+a.social-link:hover {
+  background: #fff;
 }
 
 button.repost {
@@ -135,45 +144,64 @@ button > .repost-svg {
   box-sizing: content-box;
   height: 15px;
   width: 15px;
-  background: #eeeeee;
+  background: transparent;
+  border: none;
   padding: 0;
+  cursor: pointer;
+}
+
+button.repost:hover {
+  background: #fff;
 }
 
 button.bookmark {
   display: flex;
-  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   margin-right: 16px;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   height: 29.2px;
   width: 16px;
-  background: transparent;
+  background-color: transparent;
   color: #666;
   border: none;
+  cursor: pointer;
 }
 
 button > .bookmark-svg {
   position: relative;
-  flex: 1;
-  box-sizing: content-box;
+  background-color: rgba(0, 0, 0, 0);
   height: 25px;
   width: 16px;
-  background: transparent;
-  padding: 0;
-  border: 0;
-  border-radius: 0%;
+  border: none;
+}
+
+button > .bookmark-svg:hover {
+  opacity: 0.5;
+}
+
+.comment-bubble-btn {
+  display: flex;
+  justify-content: center;
+  width: 28px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 div.comment-bubble {
   display: flex;
+  box-sizing: content-box;
   position: relative;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
   border: solid #666 0.733333px;
   font-size: 12px;
-  width: 36px;
-  height: 21px;
+  width: 26px;
+  height: 13px;
   padding: 4px;
+  justify-content: center;
 }
 
 div.comment-bubble::before {
@@ -182,9 +210,24 @@ div.comment-bubble::before {
   content: "";
   border-color: #666 transparent transparent transparent;
   border-style: solid;
-  border-width: 6px 6px 0px 6px;
+  border-width: 6px 0px 0px 8px;
   left: 15px;
   bottom: -7px;
+}
+
+div.comment-bubble::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: #FFF transparent;
+  border-style: solid;
+  border-width: 6px 0px 0px 6px;
+  left: 16px;
+  bottom: -6px;
+}
+
+div.comment-bubble:hover {
+  opacity: 0.5;
 }
 
 figure {
