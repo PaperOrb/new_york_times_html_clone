@@ -14,12 +14,15 @@ header {
   height: 25px;
   padding: 4px 15px;
   border-bottom: solid 1px #e2e2e2;
+  background: white;
+  z-index: 1;
 }
 
 .links {
   flex: 1;
   border: solid 1px red;
   height: 100%;
+  width: auto;
 }
 
 .hamburger {
@@ -46,13 +49,14 @@ header {
   display: flex;
   flex: 1;
   height: 25px;
+  width: auto;
   border: solid 1px red;
   justify-content: center;
 }
 
 .nyt-logo {
   height: 25px;
-  width: 100%;
+  width: 25px;
 }
 
 .filler {
@@ -65,7 +69,8 @@ main {
   border: solid 1px blue;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   top: 35px;
   height: 100%;
   width: 100%;
@@ -79,4 +84,25 @@ main {
   border: solid 1px pink;
   line-height: 1.2em;
   font-size: 40px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+figcaption {
+  font-size: 16px;
+  max-width: 900px;
+  color: #666666;
+  font-family: nyt-imperial, georgia,'times new roman',times,serif;;
+}
+
+.credit {
+  color: #888888;
+  letter-spacing: 0.01em;
+  font-size: 13px;
 }
