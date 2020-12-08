@@ -99,7 +99,7 @@ main {
   justify-content: flex-start;
 }
 
-.social img {
+img.svg {
   box-sizing: content-box;
   height: 15px;
   width: 15px;
@@ -124,11 +124,9 @@ button.repost {
   padding: 5px;
   height: 27px;
   width: 27px;
-  background: transparent;
   background-color: #eee;
   border: 1px #eee solid;
   border-radius: 50%;
-  padding: 5px;
 }
 
 button > .repost-svg {
@@ -139,6 +137,54 @@ button > .repost-svg {
   width: 15px;
   background: #eeeeee;
   padding: 0;
+}
+
+button.bookmark {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-right: 16px;
+  padding: 10px 0;
+  height: 29.2px;
+  width: 16px;
+  background: transparent;
+  color: #666;
+  border: none;
+}
+
+button > .bookmark-svg {
+  position: relative;
+  flex: 1;
+  box-sizing: content-box;
+  height: 25px;
+  width: 16px;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0%;
+}
+
+div.comment-bubble {
+  display: flex;
+  position: relative;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid #666 0.733333px;
+  font-size: 12px;
+  width: 36px;
+  height: 21px;
+  padding: 4px;
+}
+
+div.comment-bubble::before {
+  position: absolute;
+  display: block;
+  content: "";
+  border-color: #666 transparent transparent transparent;
+  border-style: solid;
+  border-width: 6px 6px 0px 6px;
+  left: 15px;
+  bottom: -7px;
 }
 
 figure {
