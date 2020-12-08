@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: stretch;
   width: 100vw;
-  height: 25px;
+  height: 33px;
   padding: 4px 15px;
   border-bottom: solid 1px #e2e2e2;
   background: white;
@@ -21,10 +21,10 @@ header {
 }
 
 .links {
+  display: flex;
   flex: 1;
   border: solid 1px red;
   height: 100%;
-  width: auto;
 }
 
 .hamburger {
@@ -34,7 +34,7 @@ header {
 
 .magnifier {
   width: 25px;
-  height: 25px;
+  height: 100%;
 }
 
 .category-nav {
@@ -50,15 +50,16 @@ header {
 .logo {
   display: flex;
   flex: 1;
-  height: 25px;
-  width: auto;
+  height: 100%;
+  width: 100%;
   border: solid 1px red;
   justify-content: center;
+  margin: auto;
 }
 
 .nyt-logo {
   height: 25px;
-  width: 25px;
+  width: 190px;
 }
 
 .filler {
@@ -82,9 +83,62 @@ main {
 .title {
   height: 96px;
   width: 600px;
-  border: solid 1px pink;
   line-height: 1.2em;
   font-size: 40px;
+  margin-bottom: 20px;
+  border: 1px solid brown;
+}
+
+.social {
+  display: flex;
+  width: 600px;
+  height: 34.2px;
+  padding-top: 20px;
+  margin: 0 auto;
+  border-top: 1px solid #ebebeb;
+  justify-content: flex-start;
+}
+
+.social img {
+  box-sizing: content-box;
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+  background: #eeeeee;
+  border: 1px #eee solid;
+  border-radius: 50%;
+} 
+
+.social a {
+  box-sizing: content-box;
+  margin-right: 16px;
+  height: 27px;
+  width: 18px;
+}
+
+button.repost {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-right: 16px;
+  padding: 5px;
+  height: 27px;
+  width: 27px;
+  background: transparent;
+  background-color: #eee;
+  border: 1px #eee solid;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+button > .repost-svg {
+  position: relative;
+  flex: 1;
+  box-sizing: content-box;
+  height: 15px;
+  width: 15px;
+  background: #eeeeee;
+  padding: 0;
 }
 
 figure {
@@ -93,6 +147,7 @@ figure {
   border: 1px solid red;
   justify-content: center;
   max-width: 1200px;
+    margin: 25px auto 43px auto;
 }
 
 figcaption {
