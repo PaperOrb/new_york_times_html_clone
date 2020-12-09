@@ -302,3 +302,37 @@ section.article a {
   cursor: pointer;
   line-height: 1.3em;
 }
+
+.grid-display {
+  box-sizing: content-box;
+  width: 988px;
+  height: 754px;
+  margin: 15px 0;
+}
+
+.image-wrapper {
+  background-image: url("images/inflation.png");
+  height: 576px;
+  background-repeat: none;
+}
+
+.grid-display > h1 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.grid-display > .lead-in {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(102, 102, 102);
+  weight: 400;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+
+.the-universe {
+  position: absolute;
+  top: 24.8264%;
+}
