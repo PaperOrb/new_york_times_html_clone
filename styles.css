@@ -248,6 +248,10 @@ figcaption {
   font-family: "nyt-imperial";
 }
 
+.article {
+  border: 1px red solid;
+}
+
 .credit {
   color: #888888;
   letter-spacing: 0.01em;
@@ -284,10 +288,10 @@ time {
   font-weight: 400;
 }
 
-section.article {
+.article {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 600px; 
   font-size: 21.5px;
   line-height: 27.95px;
 }
@@ -304,6 +308,7 @@ section.article a {
 }
 
 .grid-display {
+  border: 1px red solid;
   box-sizing: content-box;
   width: 988px;
   height: 754px;
@@ -330,9 +335,4 @@ section.article a {
   weight: 400;
   margin-right: 7px;
   margin-bottom: 10px;
-}
-
-.the-universe {
-  position: absolute;
-  top: 24.8264%;
 }
