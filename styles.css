@@ -248,10 +248,6 @@ figcaption {
   font-family: "nyt-imperial";
 }
 
-.article {
-  border: 1px red solid;
-}
-
 .credit {
   color: #888888;
   letter-spacing: 0.01em;
@@ -292,8 +288,8 @@ time {
   display: flex;
   flex-direction: column;
   width: 600px; 
-  font-size: 21.5px;
-  line-height: 27.95px;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 
 section.article p {
@@ -308,34 +304,27 @@ section.article a {
 }
 
 .grid-display {
-  border: 1px red solid;
   box-sizing: content-box;
   width: 988px;
-  height: 754px;
+  height: 854px;
   margin: 15px 0;
 }
 
 .image-wrapper {
-  /* display: grid;
-  grid-template-columns: repeat(4, 228px);
-  align-items: end;
-  align-content: space-evenly;
-  justify-content: center;
-  grid-gap: 30px; */
   background-image: url("images/inflation.png");
-  height: 576px;
+  height: auto;
   background-size: cover;
+  padding-bottom: 10px;
 }
 
 .grid-wrapper {
-  border: 1px red solid;
   display: grid;
   grid-template-columns: repeat(4, 228px);
-  align-items: end;
+  align-items: start;
   align-content: space-between;
   justify-content: center;
-  grid-gap: 100px 25px;
-  padding-top: 160px;
+  grid-gap: 130px 25px;
+  padding-top: 145px;
 }
 
 .grid-display > h1 {
@@ -346,11 +335,15 @@ section.article a {
 }
 
 .grid-display p {
-  display: inline;
   font-size: 14px;
   line-height: 1.3em;
   font-weight: 400;
   color: #666;
+  margin-bottom: 16px;
+}
+
+.grid-wrapper p {
+  display: inline
 }
 
 .grid-display span {
@@ -361,16 +354,15 @@ section.article a {
   padding-right: 5px;
 }
 
-.grid-display > .lead-in {
-  font-size: 14px;
-  line-height: 18px;
-  color: rgb(102, 102, 102);
-  weight: 400;
-  margin-right: 7px;
-  margin-bottom: 10px;
+.story-footer:before {
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  content: '';
+  background-color: #000;
+  margin-bottom: 13px;
 }
 
-/* .inflation-credit {
-  margin-top: 100px;
-  border: green solid 1px;
-} */
+.story-footer {
+  margin-top: 24px;
+}
