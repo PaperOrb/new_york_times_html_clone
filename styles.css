@@ -6,7 +6,7 @@ html, body {
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: arial;
 }
 
 header {
@@ -24,7 +24,6 @@ header {
 .links {
   display: flex;
   flex: 1;
-  border: solid 1px red;
   height: 100%;
 }
 
@@ -41,7 +40,7 @@ header {
 .category-nav {
   text-decoration: none;
   color: #000000;
-  font-family: "nyt-franklin";
+  font-family: arial;
   font-size: 14.25px;
   font-weight: 700;
   line-height: 19px;
@@ -53,7 +52,6 @@ header {
   flex: 1;
   height: 100%;
   width: 100%;
-  border: solid 1px red;
   justify-content: center;
   margin: auto;
 }
@@ -64,7 +62,6 @@ header {
 }
 
 .filler {
-  border: solid 1px red;
   height: 100%;
   flex: 1;
 }
@@ -77,7 +74,7 @@ main {
   height: 100%;
   width: 100%;
   padding: 60px;
-  font-family: "nyt-franklin";
+  font-family: arial;
 }
 
 .title {
@@ -86,7 +83,6 @@ main {
   line-height: 1.2em;
   font-size: 40px;
   margin-bottom: 20px;
-  border: 1px solid brown;
 }
 
 .social {
@@ -230,17 +226,24 @@ div.comment-bubble:hover {
   opacity: 0.5;
 }
 
-figure {
+figure.alan-guth {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   justify-content: center;
   max-width: 1200px;
   margin: 25px auto 43px auto;
 }
 
+figure.telescope {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+  margin: 25px auto 43px auto;
+}
+
 figcaption {
-  font-size: 0.9375rem;
+  font-size: 0.85rem;
   line-height: 1.25rem;
   max-width: 900px;
   color: #666666;
@@ -261,7 +264,7 @@ figcaption {
   margin-bottom: 15px;
   line-height: 16px;
   font-size: 0.93rem;
-  font-family: sans-serif;
+  font-family: arial;
   letter-spacing: 0.02em;
 }
 
@@ -282,7 +285,7 @@ time {
   font-weight: 400;
 }
 
-.article, .companion-story, .video-embed {
+.article, .companion-story, .video-embed, .video-story, .microwave-radiation{
   display: flex;
   flex-direction: column;
   width: 600px; 
@@ -290,11 +293,11 @@ time {
   line-height: 1.5em;
 }
 
-section.article p, section.companion-story p {
+section.article p, section.companion-story p, section.video-story p, .microwave-radiation p {
   margin-bottom: 16px;
 }
 
-section.article a, section.companion-story a{
+section.article a, section.companion-story a, section.video-story a, .microwave-radiation a {
   color: #326891;
   text-decoration: underline;
   cursor: pointer;
@@ -366,7 +369,6 @@ section.article a, section.companion-story a{
 }
 
 .companion-story {
-  border: red 1px solid;
   margin-top: 65px;
 }
 
@@ -380,4 +382,80 @@ section.article a, section.companion-story a{
 
 figure > figcaption {
   text-decoration: none !important;
+}
+
+.site-index {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 458px;
+  padding: 0 3% 9px 3%;
+}
+
+.site-index:before {
+  display: block;
+  box-sizing: content-box;
+  content: '';
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 2px solid #e2e2e2;
+  height: 1px;
+  margin-top: 0px;
+}
+
+.site-index > header { /* removing this fixes border on bottom of nyt logo */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 44px;
+  padding: 0px;
+}
+
+.home-page {
+  color: #567b95;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 11px;
+  font-size: 11px;
+}
+
+.site-index img {
+  width: 184px;
+  height: 44px;
+  line-height: 16px;
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+}
+
+.nav-links h3 {
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: arial;
+  height: 25px;
+  line-height: 15px;
+  margin: 0px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.nav-links > section > ul {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.nav-links > section > ul > a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  font-family: arial;
+  width: 150px;
+  height: 23px;
 }
