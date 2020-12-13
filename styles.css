@@ -9,12 +9,12 @@ html, body {
   font-family: arial;
 }
 
-header {
+.fixed {
   position: fixed;
   display: flex;
   justify-content: stretch;
   width: 100%;
-  height: 33px;
+  height: 42px;
   padding: 4px 15px;
   border-bottom: solid 1px #e2e2e2;
   background: white;
@@ -23,18 +23,22 @@ header {
 
 .links {
   display: flex;
+  align-items: center;
   flex: 1;
   height: 100%;
+  padding: 0 0 0 50px;
 }
 
 .hamburger {
-  width: 25px;
+  width: 20px;
   height: 100%;
+  margin: 0 16px;
 }
 
 .magnifier {
-  width: 25px;
+  width: 20px;
   height: 100%;
+  margin: 0 16px;
 }
 
 .category-nav {
@@ -45,6 +49,11 @@ header {
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0.7px;
+  margin: 0 16px;
+}
+
+.category-nav:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -53,6 +62,7 @@ header {
   height: 100%;
   width: 100%;
   justify-content: center;
+  align-items: center;
   margin: auto;
 }
 
@@ -324,7 +334,7 @@ section.article a, section.companion-story a, section.video-story a, .microwave-
   align-items: start;
   align-content: space-between;
   justify-content: center;
-  grid-gap: 130px 25px;
+  grid-gap: 155px 25px;
   padding-top: 145px;
 }
 
@@ -402,8 +412,7 @@ figure > figcaption {
   margin-top: 0px;
 }
 
-.site-index > header { /* removing this fixes border on bottom of nyt logo */
-  position: relative;
+.bottom-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -456,6 +465,63 @@ figure > figcaption {
   text-decoration: none;
   color: #333;
   font-family: arial;
-  width: 150px;
+  width: 180px;
   height: 23px;
+}
+
+.subscribe {
+  border-left: 1px solid #e2e2e2;
+}
+
+.subscribe * {
+  margin-left: 5px;
+}
+
+.subscribe h3 {
+  margin-left: 10px;
+}
+
+.bold a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  width: 170px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  height: 25px;
+  text-decoration: none;
+  font-family: arial;
+  margin-bottom: 5px;
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  max-width: 190px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 7px;
+}
+
+.subscribe-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 170px;
+}
+
+.subscribe-small a {
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  font-family: arial;
+  width: 170px;
+  height: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
